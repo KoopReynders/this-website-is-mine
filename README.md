@@ -29,9 +29,7 @@ https://this-website-is-mine.onrender.com/
 
 ## Deploy
 
-Voeg `.env` met variabelen toe aan de NodeJS online environment. 
-
-Voor Render: 'You can bulk-add variables from your .env file to Render by clicking "Add from .env" in the Environment page of your service.'
+Voeg `.env` met variabelen toe aan de NodeJS online environment. Voor Render: 'You can bulk-add variables from your .env file to Render by clicking "Add from .env" in the Environment page of your service.'
 
 ## Bronnen
 
