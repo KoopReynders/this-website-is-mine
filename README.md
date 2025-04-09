@@ -39,6 +39,7 @@ Voor Render: 'You can bulk-add variables from your .env file to Render by clicki
 
 - [How to use environment variables from a .env file in Node.js](https://geshan.com.np/blog/2024/11/nodejs-dotenv/)
 - [How to show hidden files in finder](https://discussions.apple.com/thread/251374769?sortBy=rank)
+- [Environment Variables and Secrets](https://render.com/docs/configure-environment-variables)
 - [ExpressJS - API reference](https://expressjs.com/en/5x/api.html)
 - [LiquidJS - The Liquid Template Language](https://liquidjs.com/tutorials/intro-to-liquid.html)
 
