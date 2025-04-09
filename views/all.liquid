@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FDND - This Website is Mine - All</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+
+  <h1>This Website is Mine</h1>
+  <h2>Alle websites</h2>
+  <a href="/">terug</a>
+
+  <ul>
+    {% for person in persons %}
+        <li>
+          <a href="/mywebsite/{{ person.id }}">{{ person.name }}</a> - {{ person.bio | truncate: 30 }}
+        </li>
+    {% endfor %}
+  </ul>
+
+  
+ 
+</body>
+</html>

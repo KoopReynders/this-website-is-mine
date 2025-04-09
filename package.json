@@ -1,0 +1,25 @@
+{
+  "name": "this website is mine",
+  "version": "1.0.0",
+  "description": "Maak je eigen website in 3 kliks",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdnd-task/connect-your-tribe-team-squad-page.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fdnd-task/connect-your-tribe-team-squad-page/issues"
+  },
+  "homepage": "https://github.com/fdnd-task/connect-your-tribe-team-squad-page#readme",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "liquidjs": "^10.21.0"
+  }
+}

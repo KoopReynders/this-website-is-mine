@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FDND - This Website is Mine - All</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+
+<h1>This Website is Mine</h1>
+<p>Maak je eigen website in 3 kliks</p>
+
+<nav>
+  <h2>Nav</h2>
+  <ul>
+    <li><a href="/all">Alle gemaakte website</a></li>
+  </ul>  
+</nav>
+
+
+<form method="post" action="/createwebsite">
+
+  <h2>Maak je eigen website</h2>
+  <p>Vul je naam en en klik op 'Maak website'</p>
+
+  <label>
+    <span>Naam:</span>
+    <input type="text" name="from" placeholder="Naam" required>
+  </label>
+  <input type="hidden" name="title" value="Titel van jouw website">
+  <input type="hidden" name="text" value="Schrijf hier iets over jezelf">
+  <input type="hidden" name="code" value=".card{
+ background-color: THISTLE;
+}
+.title{
+ color: LIGHTCORAL;
+ font-family: impact;
+ font-size: xx-large;
+}
+.text{
+ background-color: gold;
+ color: black;
+ font-family: fantasy;
+}">
+  <button type="submit" id="stuur">Maak website</button>
+
+</form>
+
+
+
+</body>
+</html>

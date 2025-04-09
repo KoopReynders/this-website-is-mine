@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FDND - This Website is Mine - All</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+
+      {{ person.style }}
+
+    </style>
+
+
+</head>
+<body>
+
+
+<div class="edit">
+
+<main class="card">
+
+  <header>Deze website is van {{ person.name }}</header>
+
+  <h1 class="title">{{ person.title }}</h1>
+
+  <p class="text">
+    {{ person.bio }}
+  </p>
+
+  {% comment %} <code class="code">
+    {{ person.style }}
+  </code> {% endcomment %}
+
+</main>
+
+<aside id="form">
+  <a href="/all">terug</a>
+  
+  <form method="post" action="/savewebsite">
+
+    <h2>Gegevens opslaan</h2>
+
+    <label>
+      <span>Naam:</span>
+      <input type="text" name="from" placeholder="Naam" value="{{ person.name }}">
+    </label>
+
+    <label>
+      <span>Titel:</span>
+      <input type="text" name="title" placeholder="typ typ typ" value="{{ person.title }}">
+    </label>
+
+    <label>
+      <span>Bio:</span>
+      <textarea name="text" placeholder="typ typ typ">{{ person.bio }}</textarea>
+    </label>
+
+    <label>
+      <span>CSS Style:</span>
+      <textarea name="code" placeholder="all we do is code">{{ person.style }}</textarea>
+    </label>
+
+    <input name="id" type="hidden" value="{{ person.id }}">
+    <button type="submit" id="stuur">Opslaan</button>
+
+  </form>
+
+  <details>
+    <summary>Data</summary>
+    My website
+    <pre>{{ person | json:4 }}</pre>
+  </details>
+
+</aside>
+
+</div>
+
+
+
+</body>
+</html>
