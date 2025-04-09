@@ -55,24 +55,36 @@ app.post('/savewebsite', async function (request, response) {
 
   // console.log("post - save my website",request.body)
 
-  const patchResponse = await fetch(process.env.API+request.body.id, {
+  try {
+    const patchResponse = await fetch(process.env.API+request.body.id, {
     
-    method: 'PATCH',
-    body: JSON.stringify({
-      name: request.body.from,
-      title: request.body.title,
-      bio: request.body.text,
-      style: request.body.code
-    }),
-    headers: {
-      'Content-Type': 'application/json;charset=UTF-8'
+      method: 'PATCH',
+      body: JSON.stringify({
+        name: request.body.from,
+        title: request.body.title,
+        bio: request.body.text,
+        style: request.body.code
+      }),
+      headers: {
+        'Content-Type': 'application/json;charset=UTF-8'
+      }
+  
+    })
+    
+    console.log("STATUS", response.status)
+    if (!response.ok) {
+      // throw new Error(`Response status: ${response.status}`);
     }
 
-  })
+    const patchResponseJSON = await patchResponse.json();
+    console.log(patchResponseJSON);
 
-  const patchResponseJSON = await patchResponse.json();
-  // console.log("RESULT", response.status)
-  const siteID = patchResponseJSON.data.id
+  } catch (error) {
+    console.error(error.message);
+  }
+
+  
+  const siteID = request.body.id
 
   response.redirect(303, '/mywebsite/'+siteID)
 
