@@ -4,9 +4,7 @@ Maak je eigen website in 3 kliks
 
 ## Beschrijving
 <!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
-<!-- Voeg een mooie poster visual of video toe 📸 -->
-<!-- Voeg een link toe naar GitHub Pages 🌐-->
-Project voor de Girlsday 2026 op de HvA. Girlsday is bedoeld om meiden van 12-13 jaar op een leuke en praktische manier te laten ontdekken wat je met techniek en ICT kunt.
+Project voor Girlsday 2026 op de HvA. Girlsday is bedoeld om meiden van 12-13 jaar op een leuke en praktische manier te laten ontdekken wat je met techniek en ICT kunt.
 
 Maak in 3 kliks je eigen website, URL scannen en thuis je eigen website laten zien op je mobile. 
 
@@ -31,9 +29,7 @@ https://this-website-is-mine.onrender.com/
 
 ## Deploy
 
-Voeg `.env` met variabelen toe aan de NodeJS online environment. 
-
-Voor Render: 'You can bulk-add variables from your .env file to Render by clicking "Add from .env" in the Environment page of your service.'
+Voeg `.env` met variabelen toe aan de NodeJS online environment. Voor Render: 'You can bulk-add variables from your .env file to Render by clicking "Add from .env" in the Environment page of your service.'
 
 ## Bronnen
 
