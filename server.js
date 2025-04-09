@@ -71,13 +71,13 @@ app.post('/savewebsite', async function (request, response) {
   
     })
     
-    console.log("STATUS", response.status)
-    if (!response.ok) {
-      // throw new Error(`Response status: ${response.status}`);
+    console.log("STATUS", patchResponse.status)
+    if (!patchResponse.ok) {
+      throw new Error(`Response status: ${patchResponse.status}`);
     }
 
     const patchResponseJSON = await patchResponse.json();
-    console.log(patchResponseJSON);
+    // console.log(patchResponseJSON);
 
   } catch (error) {
     console.error(error.message);
@@ -85,6 +85,7 @@ app.post('/savewebsite', async function (request, response) {
 
   
   const siteID = request.body.id
+  // const siteID = patchResponseJSON.id
 
   response.redirect(303, '/mywebsite/'+siteID)
 
