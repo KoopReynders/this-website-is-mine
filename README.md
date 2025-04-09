@@ -2,6 +2,12 @@
 Maak je eigen website in 3 kliks
 
 
+## Beschrijving
+<!-- Bij Beschrijving staat kort beschreven wat voor project het is en wat je hebt gemaakt -->
+<!-- Voeg een mooie poster visual of video toe 📸 -->
+<!-- Voeg een link toe naar GitHub Pages 🌐-->
+
+
 ## Installatie
 <!-- Bij Installatie staat hoe een andere developer aan jouw repo kan werken -->
 
